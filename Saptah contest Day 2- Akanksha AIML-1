@@ -1,0 +1,45 @@
+#include<iostream.h>
+#include<iomanip.h>
+#include<conio.h>
+#include<math.h>
+void main()
+{
+int A,B,C;
+clrscr();
+cout<<"Enter values of A,B,C: ";
+cin>>A>>B>>C;
+if(A>B && A>C)
+{
+if(B>C)
+{
+cout<<"The second largest number is: "<<B;
+}
+else
+{
+cout<<"The second largest number is: "<<C;
+}
+}
+else if(B>A && B>C)
+{
+if(A>C)
+{
+cout<<"The second largest number is: "<<A;
+}
+else
+{
+cout<<"The second largest number is: "<<C;
+}
+}
+else if(C>A && C>B)
+{
+if(A>B)
+{
+cout<<"The second largest number is: "<<A;
+}
+else
+{
+cout<<"The second largest number is B;
+}
+}
+getch();
+}
