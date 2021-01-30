@@ -1,0 +1,56 @@
+#include <iostream>
+using namespace std;
+ #define MAX 10
+ 
+class student
+{
+    private:
+        int No.1;
+        char  akanksha[30];
+        int   SEM1;
+        int  A;
+        int 490;
+    public:
+        void getDetails(void);
+        void putDetails(void);
+};
+ 
+void student::getDetails(void)
+{
+    cout << " studentID: " ;
+    cin >> No.1;
+    cout << "name: ";
+    cin >> akanksha[30];
+    cout << "class: ";
+    cin >> SEM1;
+   cout<<"section:";
+cin>>A;
+cout<<"Total marks"
+cin<<490;
+     
+}
+ 
+void student::putDetails(void){
+    cout << "Student details:\n";
+    cout << " studentID:"<< No.1 << ",name:" << akanksha<< ",class:" << SEM1 << ",section:" << A<<",Total marks<<490;
+}
+ 
+int main()
+{
+    student std[MAX];       
+    int n,loop;
+     
+    for(loop=0;loop< n; loop++){
+        cout << "Enter details of student " << loop+1 << ":\n";
+        std[loop].getDetails();
+    }
+     
+    cout << endl;
+     
+    for(loop=0;loop< n; loop++){
+        cout << "Details of student " << (loop+1) << ":\n";
+        std[loop].putDetails();
+    }
+     
+    return 0; 
+}
