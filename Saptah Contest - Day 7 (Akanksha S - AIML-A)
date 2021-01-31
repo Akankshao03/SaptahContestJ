@@ -1,0 +1,21 @@
+checkChar = array => 
+{
+    const missing = []
+
+    for(let i = 1; i < array.length; i++) 
+    {
+        var firstLet = array[i].charCodeAt(0)
+        var prevLet = array[i - 1].charCodeAt(0)
+        if (firstLet - prevLet > 1) missing.push([firstLet, prevLet])
+    }
+
+    return missing.map(letterArray => {
+        const letters = []
+
+        for(let i = letterArray[1] + 1, c = 0; c < (letterArray[0] - letterArray[1] - 1); c++) {
+            letters.push(String.fromCharCode(i))
+            i++
+        }
+        return letters
+    })[0]
+}
